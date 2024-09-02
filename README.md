@@ -10,7 +10,7 @@ Para trabajar de manera sincrónica en las tareas, se recomienda utilizar Google
 
 1. Clonar el repositorio desde GitHub:
    ```
-   git clone https://github.com/matias-saavedra-g/uch-2024-2-in4273-tareas.git
+   git clone https://github.com/matias-saavedra-g/uch-2024-2-me4250-margaret-hamilton.git
    ```
 
 2. Abrir Visual Studio Code y seleccionar la carpeta del repositorio.
