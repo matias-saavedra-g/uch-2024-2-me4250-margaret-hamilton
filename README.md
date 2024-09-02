@@ -23,7 +23,7 @@ Para trabajar de manera sincrónica en las tareas, se recomienda utilizar Google
 ## Google Colab
 
 1. Agregar el proyecto a Google Colab
-![Ejemplo de Google Colab](https://github.com/user-attachments/assets/df565cf5-7459-4ae8-943d-efee5e7a105d)
+![Ejemplo de Google Colab](https://github.com/user-attachments/assets/18614dfa-92f2-4ea0-b470-01c7a404cbc6)
 
 2. Clonar el repositorio desde Google Colab:
    ```
