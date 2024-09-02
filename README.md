@@ -6,7 +6,21 @@ Este repositorio contiene las tareas del curso ME4250 - Mecatrónica, dictado en
 
 Para trabajar de manera sincrónica en las tareas, se recomienda utilizar Google Colab o Visual Studio Code. Para ello, siga alguno de los siguientes pasos:
 
+## Llave SSH de GIT a Github
+
+[Tutorial en CLI](https://decodementor.medium.com/connect-git-to-github-using-ssh-68ab338f4523)
+
+1. Generar una llave SSH usando Git GUI
+
+(placeholder)
+
+2. Agregar la llave SSH a Github
+
+(placeholder)
+
 ## Visual Studio Code
+
+[Desgarga](https://code.visualstudio.com/)
 
 1. Clonar el repositorio desde GitHub:
    ```
@@ -22,10 +36,12 @@ Para trabajar de manera sincrónica en las tareas, se recomienda utilizar Google
 
 ## Google Colab
 
+[Google Colab](https://colab.research.google.com/)
+
 1. Agregar el proyecto a Google Colab
 ![Ejemplo de Google Colab](https://github.com/user-attachments/assets/18614dfa-92f2-4ea0-b470-01c7a404cbc6)
 
-2. Clonar el repositorio desde Google Colab:
+1. Clonar el repositorio desde Google Colab:
    ```
    !git clone
    ```
