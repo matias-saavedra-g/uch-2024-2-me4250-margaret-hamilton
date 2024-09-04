@@ -42,6 +42,7 @@ Defines the left position for the servo motor (135 degrees).
 
 ```cpp
 #define SERVO_RIGHT 45
+```
 Defines the right position for the servo motor (45 degrees).
 
 ```cpp
@@ -81,7 +82,7 @@ This function makes the car turn left while moving forward.
 Parameters: angle (float) - The angle to turn left in degrees.
 ```
 
-###**Steps**:
+**Steps**:
 1. Calculate the time required to turn the given angle.
 2. Set the motor to move forward using the H bridge.
 3. Set the servo to turn left.
