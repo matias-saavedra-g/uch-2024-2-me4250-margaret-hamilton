@@ -9,53 +9,64 @@
 This library is used to control servo motors. It provides functions to attach a servo to a pin, write angles to the servo, and detach the servo.
 
 ## Pin Definitions
+### MOTOR PIN IN3
 ```cpp
 #define MOTOR_PIN_IN3 3
 ```
 Defines digital pin 3 for controlling the motor (H bridge input 3).
 
+### MOTOR PIN IN4
 ```cpp
 #define MOTOR_PIN_IN4 5
 ```
 Defines digital pin 5 for controlling the motor (H bridge input 4).
 
+### SERVO PIN
 ```cpp
 #define SERVO_PIN 9
 ```
 Defines PWM pin 9 for controlling the servo motor.
 
+### REAR LIGHTS PIN
 ```cpp
 #define REAR_LIGHTS_PIN 10
 ```
 Defines digital pin 10 for controlling the rear lights.
 
 ## Constants
+### SERVO CENTER
 ```cpp
 #define SERVO_CENTER 90
 ```
 Defines the center position for the servo motor (90 degrees).
 
+###  SERVO LEFT
 ```cpp
 #define SERVO_LEFT 135
 ```
 Defines the left position for the servo motor (135 degrees).
 
+### SERVO RIGHT
 ```cpp
 #define SERVO_RIGHT 45
+```
 Defines the right position for the servo motor (45 degrees).
 
+### WHEEL DIAMETER
 ```cpp
 #define WHEEL_DIAMETER 7.0
 ```
 Defines the diameter of the wheel in centimeters.
 
 ## Objects
+### Servo
 ```cpp
 Servo servo
 ```
 Creates a Servo object to control the servo motor.
 
 ## Functions
+### goForward
 ```cpp
 void goForward(float distance)
 ```
@@ -72,6 +83,7 @@ Parameters: distance (float) - The distance to move forward in centimeters.
 4. Wait for the calculated time.
 5. Stop the motor.
 
+### turnLeft
 ```cpp
 void turnLeft(float angle)
 ```
@@ -81,7 +93,7 @@ This function makes the car turn left while moving forward.
 Parameters: angle (float) - The angle to turn left in degrees.
 ```
 
-###**Steps**:
+**Steps**:
 1. Calculate the time required to turn the given angle.
 2. Set the motor to move forward using the H bridge.
 3. Set the servo to turn left.
@@ -89,6 +101,7 @@ Parameters: angle (float) - The angle to turn left in degrees.
 5. Stop the motor.
 6. Set the servo back to the center position.
 
+### turnRight
 ```cpp
 void turnRight(float angle)
 ```
@@ -106,6 +119,7 @@ Parameters: angle (float) - The angle to turn right in degrees.
 5. Stop the motor.
 6. Set the servo back to the center position.
 
+### stop
 ```cpp
 void stop()
 ```
@@ -116,6 +130,7 @@ This function makes the car stop.
 2. Straighten the wheels.
 3. Stop the motor.
 
+### blink
 ```cpp
 void blink()
 ```
