@@ -7,7 +7,7 @@ const int triggerPin = 11;
 const int echoPin = 8;
 
 // Constantes Balancines 
-double Kp=2, Ki=0.002, Kd=100; //fix here
+double Kp=5, Ki=0.002, Kd=185; //fix here
 
 HCSR04 hc(11,8);
 // variables externas del controlador
@@ -25,7 +25,7 @@ void setup(){
 }
 
 void loop(){
-  Setpoint = 21; //Fix Here
+  Setpoint = 19; //Fix Here
   Input = readPosition();
   // leer una entrada del controlador
   Output = computePID(Input);
