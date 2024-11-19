@@ -7,7 +7,7 @@ const int triggerPin = 11;
 const int echoPin = 8;
 
 // Constantes Balancines 
-double Kp=50, Ki=1, Kd=1; //fix here
+double Kp=2, Ki=0.002, Kd=100; //fix here
 
 HCSR04 hc(11,8);
 // variables externas del controlador
@@ -25,12 +25,8 @@ void setup(){
 }
 
 void loop(){
-  Setpoint = 19; //Fix Here
+  Setpoint = 21; //Fix Here
   Input = readPosition();
-  if(Input > 40){
-    Serial.print(Input);
-    Serial.println("AAAAAAAAAA");
-    delay(1000);}
   // leer una entrada del controlador
   Output = computePID(Input);
   // Limitación rango superior
@@ -65,7 +61,7 @@ double computePID(double inp){
   //Serial.println(output); // calcular la salida del PID
 
   // CAMBIAR LÍMITES SERVOMOTOR DE ACUERDO A RANGO MÍNIMO Y MÁXIMO
-  output = map(output,-160,160,10,140); //Fix here too  // Valores del error transformados al ángulo de movimiento del servomotor.
+  output = map(output,-160,160,140,10); //Fix here too  // Valores del error transformados al ángulo de movimiento del servomotor.
   if(output<0){output=0;}
   if(output>140){output=140;}
   lastError = error; // almacenar error anterior
