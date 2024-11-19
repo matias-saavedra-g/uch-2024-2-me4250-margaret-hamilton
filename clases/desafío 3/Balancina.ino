@@ -25,7 +25,7 @@ void setup(){
 }
 
 void loop(){
-  Setpoint = 0; //Fix Here
+  Setpoint = 19; //Fix Here
   Input = readPosition();
   if(Input > 40){
     Serial.print(Input);
