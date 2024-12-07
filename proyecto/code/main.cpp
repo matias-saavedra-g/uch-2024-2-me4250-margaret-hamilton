@@ -60,17 +60,23 @@ void setup() {
 
 // Definimos el loop
 void loop() {
+  // Encendemos los LEDs
+    encenderLeds();
+
   // Abrimos la compuerta
-  abrirCompuerta();
+  cerrarCompuerta();
 
   // Giramos la ruleta
   girarRuleta();
 
   // Cerramos la compuerta
-  cerrarCompuerta();
+  abrirCompuerta();
 
   // Giramos el elevador
   girarElevador();
+
+  // Mostramos un número en el voltímetro
+  mostrarNumero(1);
 }
 
 // Definimos la función para abrir la compuerta
