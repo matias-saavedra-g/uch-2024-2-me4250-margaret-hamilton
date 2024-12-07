@@ -61,7 +61,7 @@ void setup() {
 // Definimos el loop
 void loop() {
   // Encendemos los LEDs
-    encenderLeds();
+  encenderLeds();
 
   // Abrimos la compuerta
   cerrarCompuerta();
